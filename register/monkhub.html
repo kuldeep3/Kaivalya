@@ -34,9 +34,9 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Registration Info</h2>
-                    <form action="register.php" method="POST">
+                    <form action="registeration.php" method="POST">
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Name" name="name">
+                            <input class="input--style-3" type="text" placeholder="Name" name="name" required>
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
@@ -50,10 +50,13 @@
                             </div>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Phone" name="phone">
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone" required>
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Year" name="year">
+                            <input class="input--style-3" type="text" placeholder="Year" name="year" required>
+                        </div>
+                         <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Branch" name="branch" required>
                         </div>
                         
                         <div class="input-group">

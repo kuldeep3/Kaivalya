@@ -1,0 +1,65 @@
+<html>
+<body>
+<style>
+ body { background-color: #008000; }
+  #ground {
+    width: 300px;
+    length: 200px;
+    margin: 50px auto;
+    background-color: ;
+    position: relative;
+    animation-name: stay;
+    animation duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes stay{
+  0%{top: 249px;}
+  50%{top: 250px;}
+  100%{top: 249px;}
+  }
+  #ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      #ff0000,
+	  #ff0000,
+	  #ff0000,
+      #ffffff,
+	  #ff0000,
+	  #ffffff,
+	  #ff0000,
+	  #ff0000,
+	  #ff0000
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 110px;
+      height: 90px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+   <!--it's a loading screen what else is it supposed to do??? 
+   ok a special one i guess ... my first one... wink wink wink-->
+   <!--maybe take part in the event trackback or backtrack-->
+</style>
+<h2 align="center">hey! come, let's play some cricket</h2>
+<div id="ground"></div>
+<div id="ball"></div>
+<div id="ball1"></div>
+</body>
+</html>
